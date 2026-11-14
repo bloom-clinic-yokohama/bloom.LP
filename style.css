@@ -69,11 +69,6 @@ body {
   object-fit: cover;
   object-position: center top;
 }
-/* 縦横比が標準と異なるスライドはcontainでずれを防ぐ */
-.slide-contain img {
-  object-fit: contain;
-  background: #f7eaec;
-}
 
 /* ページカウンター */
 .page-count {
