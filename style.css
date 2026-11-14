@@ -116,7 +116,8 @@ button:focus-visible { outline: 3px solid var(--bloom-rose); outline-offset: -3p
   position: relative;
   flex-shrink: 0;
   width: 100%;
-  height: calc(var(--lp-width) * 0.333);
+  /* safe-area分を高さに上乗せしてclipを防ぐ */
+  height: calc(var(--lp-width) * 0.333 + env(safe-area-inset-bottom));
   overflow: hidden;
   background: #f7eaec;
   padding-bottom: env(safe-area-inset-bottom);
