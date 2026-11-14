@@ -121,7 +121,8 @@ button:focus-visible { outline: 3px solid var(--bloom-rose); outline-offset: -3p
   display: block;
   position: relative;
   width: 100%;
-  height: calc(var(--lp-width) * 0.333);
+  /* バナー画像の正確な比率 2172:724 */
+  aspect-ratio: 2172 / 724;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   text-decoration: none;
@@ -130,7 +131,8 @@ button:focus-visible { outline: 3px solid var(--bloom-rose); outline-offset: -3p
 .cta-link img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* ボタン部分（下部ピル型ボタン）に光るシャインアニメーション */
