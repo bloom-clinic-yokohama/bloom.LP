@@ -3,8 +3,8 @@
   font-family: "Helvetica Neue", "Noto Sans JP", sans-serif;
   background: #f7eaec;
   color: #3a2028;
-  /* スライド比率 941:1672 ≈ 1.776 + CTA比率 0.18 → 合計縦比 1.956 */
-  --lp-width: min(100vw, calc((100svh - env(safe-area-inset-bottom)) / 1.956));
+  /* スライド比率 941:1672 ≈ 1.776 + CTA比率 0.333 → 合計縦比 2.109 */
+  --lp-width: min(100vw, calc((100svh - env(safe-area-inset-bottom)) / 2.109));
   --bloom-rose: #9a3d58;
   --bloom-rose-dark: #7a2d44;
 }
@@ -116,7 +116,7 @@ button:focus-visible { outline: 3px solid var(--bloom-rose); outline-offset: -3p
   flex-shrink: 0;
   width: 100%;
   /* safe-area分を高さに上乗せしてclipを防ぐ */
-  height: calc(var(--lp-width) * 0.18 + env(safe-area-inset-bottom));
+  height: calc(var(--lp-width) * 0.333 + env(safe-area-inset-bottom));
   overflow: hidden;
   background: #f7eaec;
   padding-bottom: env(safe-area-inset-bottom);
